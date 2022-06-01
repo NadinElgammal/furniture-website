@@ -41,33 +41,5 @@ export default {
 
 
 <style scoped>
-
-.carousel-item{
-  height: 100vh;
-  min-height: 300px;
-}
-.img{
-  filter: brightness(0.5);
-}
-h1,h5{
-  color: white;
-}
-.text{
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  top: 300px;
-  right: 200px;
-  z-index: 9;
-  
-}
-.btn{
-  background-color: #DF9180;
-  color: white;
-  font-size: 22px;
-  border-radius: 0;
-  width: 200px;
-  height: 50px;
-}
+@import url("../../assets/css/slider.css");
 </style>

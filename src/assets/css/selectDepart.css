@@ -1,0 +1,25 @@
+.head{
+    display: flex;
+    justify-content: start;
+    gap: 4px;
+}
+.head span:first-of-type{
+    color: black
+}
+.head span:last-of-type{
+    color: #df9180
+}
+
+.card{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 10px;
+}
+.card .img-part img{
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    object-position: center;
+
+}

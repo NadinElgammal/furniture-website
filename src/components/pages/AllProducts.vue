@@ -1,9 +1,12 @@
 <template>
-    <div class="container">
-    <h3>جميع المنتجات</h3>
-    <a href=""> كل المنتجات </a> |
-    <a href=""> وصل حديثا </a> |
-    <a href=""> الاكثر مبيعا </a> 
+    <div class="container" style="margin-bottom:100px">
+    <h3 class="text-center">جميع المنتجات</h3>
+    <div class="departs text-center">
+      <a href=""> كل المنتجات </a> |
+      <a href=""> وصل حديثا </a> |
+      <a href=""> الاكثر مبيعا </a> 
+    </div>
+    
     <br><br>
     <div class="row">
           <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12" v-for="product in products" :key="product.id">
@@ -30,10 +33,27 @@
                   ${{product.price}}
                 </span>
                 </div>
+                <div class="label">
+                  <span class="sale" v-if="product.sale">{{product.sale}}</span>
+                  <span class="news" v-if="product.news">{{product.news}}</span>
+                </div>
+                </div>
+                <div class="options">
+                  <div class="like">
+                    <i class="fa-solid fa-heart" style="color:#707070; margin:10px"></i>
+                  </div>
+                  <div class="bag">
+                    <i class="fa-solid fa-bag-shopping" style="color:#707070; margin:10px"></i>
+                  </div>
+                  <div class="search">
+                    <i class="fa-solid fa-magnifying-glass" style="color:#707070; margin:10px"></i>
+                  </div>
               </div>
             </div>
           </div>
         </div>
+        
+        <br><br><br>  
       </div>
 </template>
 <script>
@@ -48,6 +68,8 @@ export default {
           price: 405,
           image:
             "https://www.ikea.com/eg/en/images/products/gladom-tray-table-dark-grey-beige__0998388_pe823016_s5.jpg",
+          sale: "%15" ,
+          news: null
         },
         {
           id: 2,
@@ -55,6 +77,8 @@ export default {
           price: 246,
           image:
             "https://www.ikea.com/eg/en/images/products/skruvsta-swivel-chair-ysane-white__0724712_pe734595_s5.jpg",
+          sale: null,
+          news: "جديد",
         },
         {
           id: 3,
@@ -76,6 +100,7 @@ export default {
           price: 165,
           image:
             "https://www.ikea.com/eg/en/images/products/micke-desk-anthracite-red__0921882_pe787985_s5.jpg",
+          sale: "%15" ,
         },
         {
           id: 6,
@@ -104,6 +129,7 @@ export default {
           price: 165,
           image:
             "https://www.ikea.com/eg/en/images/products/skruvsta-swivel-chair-ysane-white__0724712_pe734595_s5.jpg",
+          news: "جديد",
         },
         {
           id: 10,
@@ -118,6 +144,7 @@ export default {
           price: 246,
           image:
             "https://www.ikea.com/eg/en/images/products/skruvsta-swivel-chair-ysane-white__0724712_pe734595_s5.jpg",
+          news: "جديد",
         },
         {
           id: 12,
@@ -131,49 +158,6 @@ export default {
   },
 };
 </script>
-<style scoped>
-.img-part {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-img {
-  width: 100%;
-  object-fit: cover;
-}
-.card{
-  padding: 0;
-  margin: 10px;
-}
-.text-part{
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  margin: 20px;
-}
-.price-part{
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-}
-.price{
-  font-size: 18px;
-  color: #34A77C;
-  font-weight: bold;
-}
-.dot {
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  display: inline-block;
-  margin: 3px;
-}
-a{
-  text-decoration: none;
-  color: #707070;
-}
-a:hover{
-  color: #DF9180;
-}
+<style lang="css" scoped>
+@import "../../assets/css/AllProducts.css";
 </style>
