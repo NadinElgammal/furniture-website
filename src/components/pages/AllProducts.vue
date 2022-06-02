@@ -11,7 +11,7 @@
     <div class="row">
           <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12" v-for="product in products" :key="product.id">
             <div class="card">
-              <div class="img-part">
+              <div class="img-partt">
                 <img :src="product.image">
               </div>
               <div class="text-part">
@@ -26,10 +26,10 @@
                 <span class="dot" style="background-color:#F8E0E3"></span>
                 </div>
                 <div class="price-part">
-                <span class="price" >
+                <span class="price2" style="text-decoration: line-through;">
                   ${{product.price}}
                 </span>
-                <span class="price2" style="text-decoration: line-through;">
+                <span class="price" >
                   ${{product.price}}
                 </span>
                 </div>

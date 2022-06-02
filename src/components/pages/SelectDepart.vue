@@ -1,9 +1,6 @@
 <template>
   <div class="container">
     <div class="row">
-      <div class="lhs col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-        <img src="https://www.ikea.com/eg/en/images/products/kallax-shelving-unit-high-gloss-white__1113779_pe871547_s5.jpg" alt=""/>
-      </div>
       <div class="rhs col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
         <div class="head">
           <span class="black-text">
@@ -13,6 +10,7 @@
             كل ما يحتاجه منزلك
           </span>
         </div>
+        <br>
         <div class="cards">
           <div class="row">
             <div
@@ -23,45 +21,16 @@
               <div class="card">
                 <div class="row">
                   <div class="img-part col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
-                    <img :src="product.image" />
+                    <img :src="product.image"/>
                   </div>
-                  <div class="text-part">
+                  <div class="text-partt col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8">
                     <h6>
                       {{ product.name }}
                     </h6>
-                    <div class="colors">
-                      <span class="dot" style="background-color: #2e2d2d"></span>
-                      <span class="dot" style="background-color: #4a6d77"></span>
-                      <span class="dot" style="background-color: #a1d0be"></span>
-                      <span class="dot" style="background-color: #e9d8e6"></span>
-                      <span class="dot" style="background-color: #f8e0e3"></span>
-                    </div>
+                    
                     <div class="price-part">
                       <span class="price"> ${{ product.price }} </span>
-                      <span class="price2" style="text-decoration: line-through">
-                        ${{ product.price }}
-                      </span>
                     </div>
-                  </div>
-                </div>
-                <div class="options">
-                  <div class="like">
-                    <i
-                      class="fa-solid fa-heart"
-                      style="color: #707070; margin: 10px"
-                    ></i>
-                  </div>
-                  <div class="bag">
-                    <i
-                      class="fa-solid fa-bag-shopping"
-                      style="color: #707070; margin: 10px"
-                    ></i>
-                  </div>
-                  <div class="search">
-                    <i
-                      class="fa-solid fa-magnifying-glass"
-                      style="color: #707070; margin: 10px"
-                    ></i>
                   </div>
                 </div>
               </div>
@@ -69,8 +38,20 @@
           </div>
         </div>
       </div>
+      <div class="lhs col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+        <div class="photo">
+          <img src="https://www.ikea.com/eg/en/images/products/kallax-shelving-unit-high-gloss-white__1113779_pe871547_s5.jpg" alt=""/>
+        </div>
+        <div class="marks">
+            <span class="mark mark1">1</span>
+            <span class="mark mark2">2</span>
+            <span class="mark mark3">3</span>
+            <span class="mark mark4">4</span>
+            <span class="mark mark5">5</span>
+            </div>
+        </div>
+      </div>
     </div>
-  </div>
 </template>
 <script>
 export default {

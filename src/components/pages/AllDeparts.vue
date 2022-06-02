@@ -6,7 +6,7 @@
       موقعنا او التواصل معنا
     </h6>
     <br><br>
-    <carousel :nav="false" :dots="false" :autoplay="true" :margin="22">
+    <carousel :nav="false" :dots="false"  :margin="22">
     <!-- <template slot="prev"><div class="back"><i class="fa-solid fa-chevron-left b-icon"></i></div></template> -->
     <div class="cardd"><img src="https://i5.walmartimages.com/asr/42a5f73e-d423-46c0-b4ff-f7693627de17.d41dbab1a623594c146dc1713672ba9d.jpeg"><br><span>اسم القسم </span></div>
     <div class="cardd"><img src="https://i.pinimg.com/550x/ca/bc/cb/cabccb6ee8313a7ae269ef0fa8859db5.jpg"><br><span>اسم القسم </span></div>
@@ -30,13 +30,14 @@ export default {
 </script>
 
 <style scoped>
-h3 {
+  h3 {
     color: black;
+    text-align: center;
   }
   h6 {
     color: #707070;
+    text-align: center;
   }
-  
   .cards-wrapper {
     display: flex;
     justify-content: center;
@@ -48,13 +49,9 @@ h3 {
     object-fit: cover;
     object-position: center;
   }
-  .card {
-    margin: 0 0.5em;
-    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-    border: none;
-    border-radius: 0;
-    
-  }
+ .cardd{
+   text-align: center;
+ }
   
   .carousel-control-prev,
   .carousel-control-next {

@@ -5,6 +5,7 @@
     <AllDeparts/>
     <AllProducts/>
     <SelectDepart/>
+    <Ad/>
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Navbar from '../components/layout/Navbar.vue'
 import AllDeparts from '../components/pages/AllDeparts.vue'
 import AllProducts from '../components/pages/AllProducts.vue'
 import SelectDepart from '../components/pages/SelectDepart.vue'
+import Ad from "../components/pages/ad.vue"
 export default {
   name: "HomeView",
   components: {
@@ -21,7 +23,8 @@ export default {
     Navbar,
     AllDeparts,
     AllProducts,
-    SelectDepart
+    SelectDepart,
+    Ad
   },
 };
 </script>

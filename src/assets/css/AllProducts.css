@@ -1,5 +1,5 @@
 
-.img-part {
+.img-partt{
     position: relative;
     width: 100%;
     height: 100%;
@@ -18,7 +18,7 @@
   .text-part{
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: flex-start;
     margin: 20px;
   }
   .price-part{
@@ -50,6 +50,7 @@
     top: 10px;
     left: 11px;
     width: 100px;
+    text-align: center;
   }
   
   .sale{
@@ -68,9 +69,8 @@
   
   .card:hover .options{
     display:flex;
-    
   }
-  .card:hover .img-part{
+  .card:hover .img-partt{
     filter:brightness(80%);
   }
   .options{
