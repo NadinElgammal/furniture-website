@@ -5,11 +5,11 @@
     </div>
     <div class="tabs">
       <ul>
-        <li>تواصل معنا</li>
-        <li>المدونة</li>
-        <li>اقسامنا</li>
-        <li>من نحن</li>
-        <li>الرئيسية</li>
+        <li> <router-link :to="{name:'Home'}" class="op">الرئيسية</router-link></li>
+        <li><router-link :to="{name:'Home'}" class="op">من نحن</router-link></li>
+        <li><router-link :to="{name:'AllDeparts'}" class="op">اقسامنا</router-link></li>
+        <li><router-link :to="{name:'Home'}" class="op">المدونة</router-link></li>
+        <li><router-link :to="{name:'Home'}" class="op">تواصل معنا</router-link></li>
       </ul>
     </div>
 

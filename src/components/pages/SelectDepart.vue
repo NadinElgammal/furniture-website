@@ -41,7 +41,8 @@
       <div class="lhs col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
         <div class="photo">
           <img src="https://www.ikea.com/eg/en/images/products/kallax-shelving-unit-high-gloss-white__1113779_pe871547_s5.jpg" alt=""/>
-        </div>
+        <div class="over-layer"></div>
+      </div>
         <div class="marks">
             <span class="mark mark1">1</span>
             <span class="mark mark2">2</span>

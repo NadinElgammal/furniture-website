@@ -9,7 +9,9 @@
           جميع الاقسام والمفروشات اللازمة لبيتك احصل عليها الان من خلال الطلب من
           موقعنا او التواصل معنا
         </span>
-        
+        <button class="btnn">
+        تسوق الان 
+        </button>
       </div>
       </div>
   </div>
@@ -61,5 +63,14 @@ export default {
   color: white;
   font-size: 15px;
   margin: 30px 0 30px ;
+  }
+.btnn{
+  background-color: #34a77c;
+  border: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  width: 180px;
+  height: 50px;
   }
 </style>

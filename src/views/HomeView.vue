@@ -6,6 +6,9 @@
     <AllProducts/>
     <SelectDepart/>
     <Ad/>
+    <Sales/>
+    <EmailForm/>
+    <Footer/>
   </div>
 </template>
 
@@ -16,6 +19,9 @@ import AllDeparts from '../components/pages/AllDeparts.vue'
 import AllProducts from '../components/pages/AllProducts.vue'
 import SelectDepart from '../components/pages/SelectDepart.vue'
 import Ad from "../components/pages/ad.vue"
+import Sales from "../components/pages/Sales.vue"
+import EmailForm from "../components/pages/EmailForm.vue"
+import Footer from "../components/layout/Footer.vue"
 export default {
   name: "HomeView",
   components: {
@@ -24,7 +30,10 @@ export default {
     AllDeparts,
     AllProducts,
     SelectDepart,
-    Ad
+    Ad,
+    Sales,
+    EmailForm,
+    Footer
   },
 };
 </script>

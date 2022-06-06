@@ -11,6 +11,10 @@
     left: 40px;
     z-index:10;
 }
+.op{
+    text-decoration: none;
+    color: #232323;
+}
 .icons{
     display: flex;
     gap: 20px;
@@ -42,7 +46,7 @@ ul{
 li{
     font-weight: bold;
 }
-li:hover{
+li .op:hover{
     color: #DF9180;
     transition: 0.3s;
 }
