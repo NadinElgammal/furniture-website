@@ -1,5 +1,8 @@
 <template>
   <div class="nav" id="nav">
+    <div class="bars-icon-div">
+      <a class="bars-icon"><i class="fa-solid fa-bars"></i></a>
+    </div>
     <div>
       <img src="../../assets/navbar/Screenshot (4).png" class="logo" />
     </div>
@@ -39,6 +42,7 @@
 <script>
 export default {
   name: "Navbar",
+
   mounted() {
     let nav = document.querySelector("#nav");
     let navH = nav.offsetHeight;

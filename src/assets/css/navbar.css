@@ -86,3 +86,35 @@ li .op:hover{
             top: 40px;
         }
     }
+
+.bars-icon-div{
+    display: none;
+}
+.bars-icon{
+    color: black;
+    font-size: 20px;
+}
+@media (max-width:800px){
+    .unFixedNavbar{
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .bars-icon-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tabs{
+        display: none;
+    }
+    .icons{
+        display: none;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-around;
+        gap: 70%;
+    }
+    
+}

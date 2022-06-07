@@ -17,7 +17,6 @@
     top: 300px;
     right: 200px;
     z-index: 9;
-    
   }
   .btnn{
     background-color: #DF9180;
@@ -27,4 +26,11 @@
     border-radius: 0;
     width: 200px;
     height: 50px;
+  }
+
+  @media (max-width:800){
+    .text{
+      top: 330px;
+      right: 18px;
+    }
   }
