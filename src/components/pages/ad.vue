@@ -73,4 +73,29 @@ export default {
   width: 180px;
   height: 50px;
   }
+
+  @media (max-width:800px) {
+    .an-text{
+      width: 75%;
+    }
+    .an-text .white{
+      font-size: 13px;
+      font-weight: 200;
+    }
+    .an-text .pink{
+      font-size: 13px;
+      font-weight: 200;
+    }
+    .an-text .caption{
+      display: block;
+      font-size: 11px;
+      margin-top: 10px;
+    }
+    .btnn{
+      font-size: 13px;
+      border-radius: 5px;
+      width: 100px;
+      height: 30px;
+      }
+  }
 </style>

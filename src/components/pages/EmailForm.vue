@@ -80,4 +80,27 @@ export default {
   color: white;
   padding: 0 15px;
 }
+
+@media (max-width:800px){
+  .headd span:first-of-type{
+    color: black;
+    font-size:17px
+}
+.headd span:last-of-type{
+    color: #df9180;
+    font-size:17px
+}
+.subH{
+  font-size: 15px;
+}
+.inp{
+  width:90%;
+}
+.btn{
+  left: 50px;
+  width: 100px;
+  height: 50px;
+  background: #34A77C;
+}
+}
 </style>

@@ -6,17 +6,15 @@
       موقعنا او التواصل معنا
     </h6>
     <br><br>
-    <carousel :nav="false" :dots="false" :margin="22">
-    <!-- <template slot="prev"><div class="back"><i class="fa-solid fa-chevron-left b-icon"></i></div></template> -->
-    <div class="cardd"><img src="https://i5.walmartimages.com/asr/42a5f73e-d423-46c0-b4ff-f7693627de17.d41dbab1a623594c146dc1713672ba9d.jpeg"><br><span>اسم القسم </span></div>
-    <div class="cardd"><img src="https://i.pinimg.com/550x/ca/bc/cb/cabccb6ee8313a7ae269ef0fa8859db5.jpg"><br><span>اسم القسم </span></div>
-    <div class="cardd"><img src="https://homedesignlover.com/wp-content/uploads/2013/01/2-main-street.jpg"><br><span>اسم القسم </span></div>
-    <div class="cardd"><img src="https://i5.walmartimages.com/asr/42a5f73e-d423-46c0-b4ff-f7693627de17.d41dbab1a623594c146dc1713672ba9d.jpeg"><br><span>اسم القسم </span></div>
-    <div class="cardd"><img src="https://i.pinimg.com/550x/ca/bc/cb/cabccb6ee8313a7ae269ef0fa8859db5.jpg"><br><span>اسم القسم </span></div>
-    <div class="cardd"><img src="https://i5.walmartimages.com/asr/42a5f73e-d423-46c0-b4ff-f7693627de17.d41dbab1a623594c146dc1713672ba9d.jpeg"><br><span>اسم القسم </span></div>
-    <div class="cardd"><img src="https://homedesignlover.com/wp-content/uploads/2013/01/2-main-street.jpg"><br><span>اسم القسم </span></div>
-    <!-- <template slot="next"><div class="next"><i class="fa-solid fa-chevron-right n-icon"></i></div></template> -->
-</carousel>
+    <carousel :nav="false" :dots="false" :responsive="{0: {items:1}, 768: {items: 3}}" :autoplay="true">
+      <div class="cardd"><img src="https://i5.walmartimages.com/asr/42a5f73e-d423-46c0-b4ff-f7693627de17.d41dbab1a623594c146dc1713672ba9d.jpeg"><br><span>اسم القسم </span></div>
+      <div class="cardd"><img src="https://i.pinimg.com/550x/ca/bc/cb/cabccb6ee8313a7ae269ef0fa8859db5.jpg"><br><span>اسم القسم </span></div>
+      <div class="cardd"><img src="https://homedesignlover.com/wp-content/uploads/2013/01/2-main-street.jpg"><br><span>اسم القسم </span></div>
+      <div class="cardd"><img src="https://i5.walmartimages.com/asr/42a5f73e-d423-46c0-b4ff-f7693627de17.d41dbab1a623594c146dc1713672ba9d.jpeg"><br><span>اسم القسم </span></div>
+      <div class="cardd"><img src="https://i.pinimg.com/550x/ca/bc/cb/cabccb6ee8313a7ae269ef0fa8859db5.jpg"><br><span>اسم القسم </span></div>
+      <div class="cardd"><img src="https://i5.walmartimages.com/asr/42a5f73e-d423-46c0-b4ff-f7693627de17.d41dbab1a623594c146dc1713672ba9d.jpeg"><br><span>اسم القسم </span></div>
+      <!-- <div class="cardd"><img src="https://homedesignlover.com/wp-content/uploads/2013/01/2-main-street.jpg"><br><span>اسم القسم </span></div> -->
+    </carousel>
 <br><br><br><br>
   </div>
 </template>
@@ -62,7 +60,7 @@ export default {
     top: 50%;
     transform: translateY(-5  0%);
   }
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
     .card img {
       height: 11em;
     }

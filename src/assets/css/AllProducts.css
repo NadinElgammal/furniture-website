@@ -1,4 +1,6 @@
-
+.container{
+  margin-bottom:100px;
+}
 .img-partt{
     position: relative;
     width: 100%;
@@ -86,4 +88,9 @@
   }
   .like , .bag , .search{
     background-color:white;
+  }
+  @media screen and  (max-width:800px){
+    .container{
+      margin-bottom: 0px;
+    }
   }

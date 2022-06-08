@@ -28,9 +28,10 @@
     height: 50px;
   }
 
-  @media (max-width:800){
+  @media  (max-width:800px){
     .text{
       top: 330px;
       right: 18px;
+      z-index: 9;
     }
   }

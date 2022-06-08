@@ -87,4 +87,14 @@
     opacity: 0.4;
 }
 
+@media (max-width:800px){
 
+    .head span:first-of-type{
+        color: black;
+        font-size:20px
+    }
+    .head span:last-of-type{
+        color: #df9180;
+        font-size:20px
+    }
+}

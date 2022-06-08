@@ -1,5 +1,5 @@
 <template>
-    <div class="container" style="margin-bottom:100px">
+    <div class="container">
     <h3 class="text-center">جميع المنتجات</h3>
     <div class="departs text-center">
       <a href=""> كل المنتجات </a> |
