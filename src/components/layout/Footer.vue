@@ -97,6 +97,7 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 15px;
         margin: 25px 0;
     }
     .copy-right{

@@ -26,10 +26,13 @@
     width: 40px;
     height: 40px;
 }
-.tabs{
+.tabs-nav{
     display: flex;
     padding: 0;
 }
+/* .tabs-canvas{
+    display: none;
+} */
 ul{
     display: flex;
     align-items: center;
@@ -107,7 +110,10 @@ li .op:hover{
         justify-content: center;
         align-items: center;
     }
-    .tabs ul{
+    .tabs-nav{
+        display: none;
+    }
+    .tabs-canvas ul{
         display: flex;
         flex-direction: column;
         justify-content: center;
